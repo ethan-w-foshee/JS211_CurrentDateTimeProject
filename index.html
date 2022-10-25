@@ -6,10 +6,45 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Ethan's Javascript Palace</h1>
     <hr/>
+    <h2>Time and Date</h2>
     <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <button onclick="displayDate()">Display Time and Date</button>
     <hr/>
+    <h2>Number to String</h2>
+    <input type="number" id="numberToString" name="numberToString" onclick="numToString()">
+    <label for="numberToString">Change Number to Text</label>
+    <div id="numTextified"></div>
+    <hr/>
+    <h2>String to Number</h2>
+    <input type="text" id="stringToNumber" name="stringToNumber">
+    <label for="stringToNumber"><button onclick="stringToNum()">Convert String to Number</button></label>
+    <div id="textNumified"></div>
+    <hr/>
+    <h2>Object Testing</h2>
+    <input type="text" id="objectTest" name="objectTest">
+    <label for="objectTest"><button onclick="objectTypeTest()">Test Object</button></label>
+    <div id="testedObject"></div>
+    <hr/>
+    <h2>Adding Things</h2>
+    <input type="number" id="number1" name="number1"> +
+    <input type="number" id="number2" name="number2">
+    <button onclick="addTwo()">=</button>
+    <div id="equalsBox"></div>
+    <hr/>
+    <h2>Multi-statements</h2>
+    <h3>Both true</h3>
+    <input type="checkbox" id="doubleT1"> <input type="checkbox" id="doubleT2">
+    <button onclick="bothTrue()">Test It!</button>
+    <div id="bothTrue"></div>
+    <h3>Either true</h3>
+    <input type="checkbox" id="eitherT1"> <input type="checkbox" id="eitherT2">
+    <button onclick="eitherTrue()">Test It!</button>
+    <div id="eitherTrue"></div>
+    <h3>Neither true</h3>
+    <input type="checkbox" id="neitherT1"> <input type="checkbox" id="neitherT2">
+    <button onclick="neitherTrue()">Test It!</button>
+    <div id="neitherTrue"></div>
   </body>
 </html>
